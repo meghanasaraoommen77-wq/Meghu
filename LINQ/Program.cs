@@ -153,26 +153,26 @@ class Program7
             Console.WriteLine("\n");
 
             //take
-            var three = products.Take(3);
+            var three = products.Take(8);
             foreach (var f in three) 
                 Console.WriteLine(f.name);
             Console.WriteLine("\n");
 
             //skip
-            var skip = products.Skip(3);
+            var skip = products.Skip(5);
             foreach (var item in skip)
             {
                 Console.WriteLine(item.name);
             }
 
             //takewhile
-            var takewhile = products.TakeWhile(p => p.price > 100);
+            var takewhile = products.TakeWhile(p => p.price > 200);
             foreach (var item in takewhile)
                 Console.WriteLine(item.name);
             Console.WriteLine("\n");
 
             //SKIPwhile
-            var skipwhile = products.SkipWhile(p => p.price > 200);
+            var skipwhile = products.SkipWhile(p => p.price > 600);
             foreach (var item in skipwhile) 
                 Console.WriteLine(item.name);
             Console.WriteLine("\n");
@@ -181,6 +181,7 @@ class Program7
         }
 
         Console.ReadLine();
+        Console.WriteLine("welcome");
         }
     }
 
